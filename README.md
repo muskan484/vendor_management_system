@@ -13,9 +13,10 @@ git clone "https://github.com/muskan484/vendor_management_system.git",
     - Migrations for database 
         python3 manage.py makemigrations
         python3 manage.py migrate
-    - Run server:
+    - Create Superuser
+          python3 manage.py createsuperuser    
+    - Start the development server:
         python3 manage.py runserver
-
    
     or use the start.sh file to run the project
     neviagte to the root folder and run
