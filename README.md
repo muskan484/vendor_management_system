@@ -6,7 +6,7 @@ This is a Vendor Management System developed using Django and Django REST Framew
 
 git clone "https://github.com/muskan484/vendor_management_system.git",
 
-3. Commands to run the project
+2. Commands to run the project
     - python3 -m venv <ENV_NAME>
     - source <ENV_NAME>/bin/activate
     - pip3 install -r requirements.txt
