@@ -61,12 +61,14 @@ git clone "URL",
 - POST /api/vendors/
 
 Example request body:
+```
 {
     "name": "vansh dresses",
     "contact_details": "11223-33445",
     "address": "123, xyz street, mumbai, India",
     "vendor_code": "vansh123"
 }
+```
 
 #### List all vendors
 
@@ -83,13 +85,14 @@ Example request body:
 - PUT /api/vendors/{vendor_id}/
 
 Example request body:
-
+```
 {
     "name": "vansh dresses",
     "contact_details": "11223-33445",
     "address": "123, xyz street, mumbai, India",
     "vendor_code": "vansh001"
 }
+```
 
 
 #### Delete a vendor
@@ -104,7 +107,7 @@ Example request body:
 - POST /api/purchase_orders/
 
 Example request body:
-
+```
 {
     "po_number": "PO001",
     "vendor": 1,
@@ -123,7 +126,7 @@ Example request body:
     "quantity": 15,
     "status": "pending"
 }
-
+```
 
 #### List all purchase orders
 
@@ -138,7 +141,7 @@ Example request body:
 - PUT /api/purchase_orders/{po_id}/
 
 Example request body:
-
+```
 {
     "po_number": "PO001",
     "vendor": 1,
@@ -160,7 +163,7 @@ Example request body:
     "issue_date": "2022-01-01T00:00:00Z",
     "acknowledgment_date": "2022-01-02T00:00:00Z"
 }
-
+```
 #### Delete a purchase order
 
 - DELETE /api/purchase_orders/{po_id}/
@@ -173,14 +176,14 @@ Example request body:
 - GET /api/vendors/{vendor_id}/performance/
 
 Example response body:
-
+```
 {
     "on_time_delivery_rate": 80.0,
     "quality_rating_avg": 4.5,
     "average_response_time": 30.0,
     "fulfillment_rate": 100.0
 }
-
+```
 ### Acknowledge a Purchase Order
 
 #### Acknowledge a purchase order
@@ -188,11 +191,11 @@ Example response body:
 - POST /api/purchase_orders/{po_id}/acknowledge/
 
 Example response body:
-
+```
 {
     "message": "Purchase Order acknowledged successfully"
 }
-
+```
 ## Token Authentication
 
 API endpoints are secured with JWT token-based authentication. To obtain an authentication token, send a POST request to the `/api/token/` endpoint with valid credentials. The response will contain an access token that can be used to authenticate subsequent requests.
