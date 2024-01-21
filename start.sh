@@ -9,5 +9,8 @@ pip3 install -r requirements.txt
 python3 manage.py makemigrations
 python3 manage.py migrate
 
+# Create Superuser
+python3 manage.py createsuperuser
+
 # Run Django development server
 python3 manage.py runserver
